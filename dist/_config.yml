@@ -1,0 +1,9 @@
+### Site metadata ###
+
+title: simple D&D Balancer
+description: A simple tool for creating D&D encounters
+
+github_repo: JAHanley/Simple-D-D-Balancing-wasm
+
+### Build settings ###
+theme: minima
