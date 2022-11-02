@@ -263,11 +263,11 @@ impl SpellAttack {
         let dc_roll = self.dc-enemy_bonus as i32;
         let fail_chance:f64;
         if dc_roll>=20{
-            fail_chance=1.;
-        } else if dc_roll<=1 {
             fail_chance=0.;
+        } else if dc_roll<=1 {
+            fail_chance=1.;
         } else{
-            fail_chance = dc_roll as f64/20.
+            fail_chance = 1. - dc_roll as f64/20.
         }
 
         let dice_distro = Distribution::from(self.damage);
